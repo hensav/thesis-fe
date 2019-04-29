@@ -1,0 +1,54 @@
+@import "../../palette";
+
+.Stats-header {
+  background-color: rgb(48,48,48);
+  color: white;
+  font-size: 15px;
+  padding: 15px;
+  text-align: center;
+  &__back-button {
+    float: left;
+    color: white;
+  }
+  &__title {
+    text-align: center;
+  }
+}
+.Stats {
+  height: 100vh;
+  padding: 20px;
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    border-bottom: 2px solid lightgray;
+    padding: 10px 0 10px 0;
+  }
+  &__name {
+    display: inline;
+    float: left;
+    font-weight: bold;
+    color: rgb(64,64,64);
+  }
+  &__time {
+    display: inline;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(128,128,128);
+  }
+  &__feedback {
+    display: inline;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(128,128,128);
+    span{
+      font-weight: bold;
+    }
+  }
+  &__progress {
+    display: block;
+    font-size: 12px;
+  }
+}

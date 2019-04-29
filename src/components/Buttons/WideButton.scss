@@ -1,0 +1,14 @@
+.WideButton{
+  &__button{
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: rgb(48,48,48);
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

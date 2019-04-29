@@ -1,0 +1,62 @@
+@import "../../palette";
+
+.Exercise-wrapper {
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Exercise {
+    &__upper-buttons {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__lower-buttons {
+        grid-row-start: 3;
+        grid-row-end: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__footer {
+        color: white;
+    }
+}
+
+.Timer{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__circle:hover{
+        cursor: pointer;
+    }
+    &__circle-ripple{
+        animation: effect_dylan 0.6s ease-out;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes effect_dylan {
+    50% {
+        transform: scale(1.5, 1.5);
+        opacity: 0;
+    }
+    99% {
+        transform: scale(0.001, 0.001);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(0.001, 0.001);
+        opacity: 1;
+    }
+}
